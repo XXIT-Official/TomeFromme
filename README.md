@@ -9,7 +9,17 @@ XXIT tomefromme front
 
 
 # 로컬에서 환경 구성
-[기여하는 방법](https://github.com/XXIT-Official/Awesome-Womyn-Dev/wiki/How-to-Contribute%3F-:-Awesome-Womyn-Dev%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0) 을 참고합니다
+* [기여하는 방법](https://github.com/XXIT-Official/Awesome-Womyn-Dev/wiki/How-to-Contribute%3F-:-Awesome-Womyn-Dev%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0) 과 [뉴비를 위한 Node.js](https://miryang.dev/2019/05/25/begin-nodejs/)를 참고합니다*
+1. `Git` 설치
+2. `Node.js` 설치
+3. Webstorm이나 Vscode 등의 IDE 설치
+4. 이 저장소를 로컬에 `Clone`
+5. 기본 세팅을 위한 명령어 실행
+```
+$ npm install
+```
+6. `/bin/www` 실행
+7. `localhost:3000' 접속
 
 
 # 작업할 파일
