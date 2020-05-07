@@ -19,7 +19,7 @@ XXIT tomefromme front
 $ npm install
 ```
 6. `/bin/www` 실행
-7. `localhost:30001 접속
+7. `localhost:3000` 접속
 
 
 # 작업할 파일
