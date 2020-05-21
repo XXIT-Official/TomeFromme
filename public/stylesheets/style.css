@@ -1,10 +1,195 @@
-/*여기내용다지워도돼요*/
-
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* home */
+.home__container {
+  background: url(../images/home.png) no-repeat;
+  background-size: cover;
+  padding: 150px 0 200px;
 }
 
-a {
-  color: #00B7FF;
+.home__title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.home__form {
+  margin-top: 40px;
+}
+.home__form input,
+.home__form button {
+  height: 35px;
+  padding: 0 10px;
+}
+.home__form input {
+  width: 300px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.home__form button {
+  background-color: #3f51b4;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.home__pages {
+  display: flex;
+  margin-top: 50px;
+}
+.home__pages a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background: transparent linear-gradient(180deg, #0f4c81 0%, #5a6bea58 100%) 0%
+    0% no-repeat padding-box;
+  font-size: 14px;
+  color: #ffffff;
+}
+.home__pages a h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+/* about */
+.about__title {
+  text-align: center;
+}
+.about__title h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.about__title span {
+  display: block;
+}
+.about__title span:nth-of-type(1) {
+  opacity: 0.5;
+  margin: 10px 0;
+}
+.about__title span:nth-of-type(2) {
+  color: #3f51b4;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about__contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__contents.xxit {
+  flex-direction: row-reverse;
+}
+.about__contents img {
+  max-width: 500px;
+}
+
+.contents__content {
+  color: #707070;
+  font-size: 14px;
+}
+.content__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contents__content p {
+  max-width: 360px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.about__quote {
+  margin-top: 50px;
+  color: #707070;
+  text-align: center;
+}
+.about__quote h3 {
+  font-family: MapoFlowerIsland, serif;
+  font-size: 24px;
+}
+.about__quote span {
+  display: block;
+  margin: 15px 0 30px;
+  font-size: 14px;
+}
+.about__quote p {
+  line-height: 24px;
+}
+/* contact */
+.contact__container {
+  margin-top: 100px;
+  padding: 50px 0;
+  background: transparent linear-gradient(180deg, #efeff29d 0%, #c9ccdb 100%) 0%
+    0% no-repeat padding-box;
+}
+.contact__container h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact__socials a {
+  color: #0f4c81;
+  font-size: 20px;
+  margin: 10px 5px 20px;
+}
+.contact__socials::after {
+  content: "";
+  display: block;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #9c9c9c;
+}
+.contact__pages {
+  display: flex;
+  justify-content: center;
+}
+.pages__page {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px;
+}
+.pages__page h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.page__button {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: 1px solid #3f51b4;
+  border-radius: 10px;
+  color: #3f51b4;
+  font-size: 14px;
+}
+.pages__page a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  color: #3f51b4;
+}
+.pages__page:first-child a {
+  background: #3f51b4;
+  color: #ffffff;
+}
+.pages__page:first-child .page__button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.contact__container small {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
 }

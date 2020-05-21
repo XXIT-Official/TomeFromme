@@ -2,12 +2,125 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('../components/styles.ejs') %>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="/stylesheets/mobile.css"
+      media="screen and (max-width:768px)"
+    />
   </head>
   <body>
-    <h1>use this</h1>
-
-    <a href="/test1" target="_blank">test1.ejs</a>
-    <a href="/test2" target="_blank">test2.ejs</a>
+    <%- include('../components/header.ejs') %>
+    <section>
+      <article id="home" class="home__container">
+        <div class="container">
+          <h2 class="home__title">6개월 전의<br />나의 열정 확인하기</h2>
+          <form class="home__form" action="/letter">
+            <input type="text" placeholder="발급받은 Key를 입력해주세요." />
+            <button type="submit">편지확인</button>
+          </form>
+          <div class="home__pages">
+            <a href="https://xxit.world/"
+              ><h3>XXIT</h3>
+              official</a
+            >
+            <a href="https://github.com/XXIT-Official/No-Spam-Mail"
+              ><h3>No Spam</h3>
+              설정 확인</a
+            >
+            <a href="#"
+              ><h3>ToMe FromMe</h3>
+              카톡테마</a
+            >
+          </div>
+        </div>
+      </article>
+      <article id="about" class="about__container container">
+        <div class="about__title">
+          <h2>To Me From Me</h2>
+          <span>with</span>
+          <span>XXIT</span>
+        </div>
+        <div class="about__contents xxit">
+          <div class="contents__content">
+            <h3 class="content__title">XXIT</h3>
+            <p>
+              XXIT(엑싯)은 프로그래밍에 관심이 있는 여성들을 위하여 만들어진
+              여성 IT 커뮤니티입니다.
+            </p>
+            <p>
+              현재 프로그래밍 분야의 롤모델 부재와 고립이라는 문제에 대해
+              끊임없이 고민하며, 여성들의 네트워크 구축에 힘쓰고 있습니다.
+            </p>
+          </div>
+          <img src="../images/about-programming.png" />
+        </div>
+        <div class="about__contents">
+          <div class="contents__content">
+            <h3 class="content__title">To Me From Me Project</h3>
+            <p>
+              XXIT(엑싯)은 현 가부장 제도와 남초사회로 인해 억압된 여성의 야망을
+              키우고, 서로 전시하는 활동을 하고 있습니다.
+            </p>
+            <p>
+              이 활동의 일환으로써, 나의 가까운 미래의 청사진을 그려보고 이를
+              확인하기 위해 6개월 후의 나에게 메일 보내기 프로젝트를 시작하게
+              되었습니다.
+            </p>
+          </div>
+          <img src="../images/about-education.png" />
+        </div>
+        <div class="about__quote">
+          <h3>"꺼지지 않을 불길로 타올라라"</h3>
+          <span>- 루이사 시게아</span>
+          <p>
+            이 프로젝트가 당신에게 좋은 동기부여가 되기를 진심으로 바랍니다.
+          </p>
+          <p>2020년의 당신을 응원합니다.</p>
+        </div>
+      </article>
+      <article id="contact" class="contact__container">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="contact__socials">
+            <a href="#" class="fas fa-envelope"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-facebook-square"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+          <div class="contact__pages">
+            <div class="pages__page">
+              <a href="https://xxit.world/">
+                <h3>XXIT</h3>
+                <span>official</span>
+                <span class="page__button">바로가기</span>
+              </a>
+            </div>
+            <div class="pages__page">
+              <a href="http://cafe.daum.net/xxit">
+                <h3>XXIT</h3>
+                <span>Daum 카페</span>
+                <span class="page__button">바로가기</span>
+              </a>
+            </div>
+            <div class="pages__page">
+              <a href="#">
+                <h3>To Me From Me</h3>
+                <span>카카오톡 테마</span>
+                <span class="page__button">바로가기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <small>© 2020 XXIT</small>
+      </article>
+    </section>
   </body>
 </html>
