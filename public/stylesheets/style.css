@@ -133,7 +133,9 @@
   font-size: 24px;
   font-weight: bold;
 }
-
+.contact__socials li {
+  display: inline-block;
+}
 .contact__socials a {
   color: #0f4c81;
   font-size: 20px;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>ToMeFromMe</title>
     <%- include('../components/styles.ejs') %>
     <link
       rel="stylesheet"
@@ -26,20 +26,26 @@
             <input type="text" placeholder="발급받은 Key를 입력해주세요." />
             <button type="submit">편지확인</button>
           </form>
-          <div class="home__pages">
-            <a href="https://xxit.world/"
-              ><h3>XXIT</h3>
-              official</a
-            >
-            <a href="https://github.com/XXIT-Official/No-Spam-Mail"
-              ><h3>No Spam</h3>
-              설정 확인</a
-            >
-            <a href="#"
-              ><h3>ToMe FromMe</h3>
-              카톡테마</a
-            >
-          </div>
+          <ul class="home__pages">
+            <li>
+              <a href="https://xxit.world/"
+                ><h3>XXIT</h3>
+                official</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/XXIT-Official/No-Spam-Mail"
+                ><h3>No Spam</h3>
+                설정 확인</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><h3>ToMe FromMe</h3>
+                카톡테마</a
+              >
+            </li>
+          </ul>
         </div>
       </article>
       <article id="about" class="about__container container">
@@ -89,35 +95,43 @@
       <article id="contact" class="contact__container">
         <div class="container">
           <h2>Contact</h2>
-          <div class="contact__socials">
-            <a href="#" class="fas fa-envelope"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-facebook-square"></a>
-            <a href="#" class="fab fa-instagram"></a>
-          </div>
-          <div class="contact__pages">
-            <div class="pages__page">
+          <ul class="contact__socials">
+            <li>
+              <a href="#" class="fas fa-envelope"></a>
+            </li>
+            <li>
+              <a href="#" class="fab fa-twitter"></a>
+            </li>
+            <li>
+              <a href="#" class="fab fa-facebook-square"></a>
+            </li>
+            <li>
+              <a href="#" class="fab fa-instagram"></a>
+            </li>
+          </ul>
+          <ul class="contact__pages">
+            <li class="pages__page">
               <a href="https://xxit.world/">
                 <h3>XXIT</h3>
                 <span>official</span>
                 <span class="page__button">바로가기</span>
               </a>
-            </div>
-            <div class="pages__page">
+            </li>
+            <li class="pages__page">
               <a href="http://cafe.daum.net/xxit">
                 <h3>XXIT</h3>
                 <span>Daum 카페</span>
                 <span class="page__button">바로가기</span>
               </a>
-            </div>
-            <div class="pages__page">
+            </li>
+            <li class="pages__page">
               <a href="#">
                 <h3>To Me From Me</h3>
                 <span>카카오톡 테마</span>
                 <span class="page__button">바로가기</span>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
         <small>© 2020 XXIT</small>
       </article>
