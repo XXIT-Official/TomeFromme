@@ -7,7 +7,6 @@
 
 .home__title {
   font-size: 32px;
-  font-weight: bold;
   line-height: 40px;
 }
 
@@ -58,6 +57,13 @@
 }
 
 /* about */
+.about__container {
+  background: transparent url('../images/about-paperplane.png')
+  0% 0% no-repeat padding-box;
+  background-size: 20%;
+  background-position: 650px 0px;
+}
+
 .about__title {
   text-align: center;
 }
@@ -180,14 +186,6 @@
   background: #ffffff;
   border-radius: 15px;
   color: #3f51b4;
-}
-.pages__page:first-child a {
-  background: #3f51b4;
-  color: #ffffff;
-}
-.pages__page:first-child .page__button {
-  border: 1px solid #ffffff;
-  color: #ffffff;
 }
 .contact__container small {
   display: block;
