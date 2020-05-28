@@ -1,6 +1,6 @@
 /* home */
 .home__container {
-  background: url(../images/home.png) no-repeat;
+  background: url(../images/home.svg) no-repeat;
   background-size: cover;
   padding: 150px 0 200px;
 }
