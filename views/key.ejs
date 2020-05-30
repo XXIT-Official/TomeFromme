@@ -23,9 +23,9 @@
       <article id="home" class="home__container">
         <div class="container">
           <h2 class="home__title">6개월 전의<br />나의 열정 확인하기</h2>
-          <form class="home__form" method="post" action="/email">
-            <input type="email" name="email" placeholder="이메일을 입력해주세요." required/>
-            <button type="submit">OK</button>
+          <form class="home__form" method="post" action="/letter/<%= email %>">
+            <input type="text" name="key" placeholder="발급받은 Key를 입력해주세요." required/>
+            <button type="submit">편지확인</button>
           </form>
           <ul class="home__pages">
             <li>
