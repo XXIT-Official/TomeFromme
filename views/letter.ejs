@@ -3,19 +3,34 @@
   <head>
     <title>ToMeFromMe</title>
     <%- include('../components/styles.ejs') %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/letter.css" />
   </head>
   <body>
     <%- include('../components/header.ejs') %>
     <div class="letter-wrap">
-      <div class="letter-wrap-content">
-
-        <%content.letters.forEach(function(ltr){%>
-        <div><%=ltr%></div>
-        <%})%>
-
+      <div class="prev button" onclick="prevBtn()">
+        <img src="/images/icons/chevron-back-outline.svg">
       </div>
+      <div class="next button" onclick="nextBtn()">
+        <img src="/images/icons/chevron-forward-outline.svg">
+      </div>
+      <span id="to">To me.</span>
+      <div id='letter-wrap-content'  class="letter-wrap-content">
+        <%content.letters.forEach(function(ltr){%>
+          <div><%=ltr%></div>
+        <%})%>
+      </div>
+      <span id="date"><%=content.date%></span>
+      <span id="from">From me.</span>
+      <ul id="letter-number-list" class="letter-number-list">
+        <%var number=1;%>
+        <%content.letters.forEach(function(ltr){%>
+          <li class="letter-number" id=<%=number%></li><%=number%></li>
+          <%number++;%>
+        <%})%>
+      </ul>
     </div>
-
-
+    <img src="/images/mailview-envelope.png" id="img" >
+    <div class="footer">© 2020 XXIT</div>
   </body>
 </html>
