@@ -16,8 +16,8 @@ body {
 .letter-wrap-content {
     margin: 0 auto;
     width: 65%;
-    height: 58%;
-    margin-top: 17%;
+    height: 50%;
+    margin-top: 20%;
     color: black;
     font-size: large;
     position: relative;
@@ -35,7 +35,7 @@ body {
     margin-right: 20px;
 }
 .letter-number-list {
-    margin-top: 8%;
+    margin-top: 11%;
     margin-left: 48%;
     display: flex;
 }
@@ -65,7 +65,8 @@ body {
     text-align: center;
     font-size: 21px;
     margin-top: 1%;
-    margin-left: 40%;
+    margin-left: 45%;
+    font-style: normal;
 }
 
 span {
@@ -75,22 +76,25 @@ span {
 
 #to {
     float: left;
-    margin-top: 8%;
-    margin-left: 3%;
+    margin-top: 11%;
+    margin-left: 4%;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 50px;
 }
 
 #from {
     float: right;
-    margin-right: 23%;
+    margin-right: 20%;
     margin-top: 5%;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 50px;
 }
 
 .footer {
     width: 100%;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #f5f5f5;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin-top: 2%;
 }

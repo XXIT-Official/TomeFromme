@@ -4,6 +4,7 @@
     <title>ToMeFromMe</title>
     <%- include('../components/styles.ejs') %>
     <link rel="stylesheet" type="text/css" href="/stylesheets/letter.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
   </head>
   <body>
     <%- include('../components/header.ejs') %>
@@ -20,7 +21,7 @@
           <div><%=ltr%></div>
         <%})%>
       </div>
-      <span id="date"><%=content.date%></span>
+      <span id="date"><%=content.date.substring(0,10);%></span>
       <span id="from">From me.</span>
       <ul id="letter-number-list" class="letter-number-list">
         <%var number=1;%>
