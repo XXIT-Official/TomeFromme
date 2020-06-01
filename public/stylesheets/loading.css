@@ -1,0 +1,127 @@
+body {
+  background-color: #f6f8fd;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mail {
+  width: 300px;
+  height: 200px;
+  background-color: #3369bb;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.mail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 140px solid transparent;
+  border-right: 150px solid #3f51b4;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #3f51b4;
+  border-bottom-right-radius: 10px;
+  z-index: 5;
+}
+
+.mail:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 150px solid #3369bb;
+  border-right: 140px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #3369bb;
+  border-bottom-left-radius: 10px;
+  z-index: 4;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 100px solid #5f83b8;
+  border-bottom: 100px solid transparent;
+  z-index: 6;
+  animation: openCover 0.5s ease-out both;
+}
+
+@keyframes openCover {
+  from {
+    transform-origin: top;
+    transform: rotateX(0deg);
+  }
+  to {
+    transform-origin: top;
+    transform: rotateX(180deg);
+  }
+}
+
+.letter {
+  position: absolute;
+  z-index: 4;
+  top: 0px;
+  left: 10px;
+  background-color: #f7f1e3;
+  width: 280px;
+  height: 180px;
+  border-radius: 20px;
+  animation: letterMove 0.3s 0.5s ease-out both;
+}
+
+.letter .fire {
+  background-image: url("../images/fire@2x.png");
+  background-size: cover;
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes letterMove {
+  0% {
+    transform: none;
+  }
+  100% {
+    top: -80px;
+    transition: 1s 1s ease;
+  }
+}
+
+/* .cover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 100px solid #5f83b8;
+    border-bottom: 100px solid transparent;
+    z-index: 6;
+    transform-origin: top;
+    transform: rotateX(0deg);
+    transition: all 1s 1s ease;
+  } */
+
+/* .mail:hover .cover:before {
+    transform: rotateX(180deg);
+    transition: all 1s ease;
+  } */
+
+/* .mail:hover .letter {
+    top: -80px;
+    transition: all 1s 1s ease;
+  } */
