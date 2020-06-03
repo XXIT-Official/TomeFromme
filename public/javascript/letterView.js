@@ -13,11 +13,12 @@ for (let i = 1; i <= document.getElementById('letter-wrap-content').childElement
         let prev = document.getElementById(String(currentIndex));
         prev.style.backgroundColor = '#E8E8E8';
         prev.style.color = '#909090';
-        let change = document.getElementById(String(num));
+        let change = document.getElementById(String(currentNum));
         change.style.backgroundColor = '#4353a1';
         change.style.color = '#ffffff';
         currentIndex = currentNum;
         replaceArrow();
+        //className 변경해서 .checked 로 수정할려고 했는데 안먹혀서 이런 식으로 구현..
     });
 
 }
@@ -69,6 +70,8 @@ function replaceArrow() {
                 replaceNext();
             }
         }
+    }else {
+        document.getElementById(String(currentIndex)).style.marginLeft="30px";
     }
 }
 function replacePrev() {
