@@ -11,32 +11,36 @@
 
 <body>
   <%- include('../components/header.ejs') %>
-  <div class="letter-wrap">
-    <div class="letter-back button" onclick="prevBtn()">
-      <img id="prev" src="/images/icons/chevron-back-outline.svg">
-    </div>
-    <div class="letter-forward button" onclick="nextBtn()">
-      <img id="next" src="/images/icons/chevron-forward-outline.svg">
-    </div>
+  <div class="letter-wrap" id="letter-wrap">
     <span id="to">To me,</span>
-    <div id='letter-wrap-content' class="letter-wrap-content">
-      <% var number=1;%>
-      <%content.letters.forEach(function(ltr){%>
-      <div id=<%='letter'+String(number)%>><%=ltr%></div>
-      <% number++;%>
-      <%})%>
+    <div class="letter-up">
+      <div class="letter-back button" id="btn1" onclick="prevBtn()">
+        <img id="prev" src="/images/icons/chevron-back-outline.svg">
+      </div>
+      <div class="letter-forward button" id="btn" onclick="nextBtn()">
+        <img id="next" src="/images/icons/chevron-forward-outline.svg">
+      </div>
+      <div id='letter-wrap-content' class="letter-wrap-content">
+        <% var number=1;%>
+        <%content.letters.forEach(function(ltr){%>
+        <div id=<%='letter'+String(number)%>><%=ltr%></div>
+        <% number++;%>
+        <%})%>
+      </div>
     </div>
-    <span id="date">
-      <%= content.date.substring(0,10).replace('-','.').replace('-','.');%>
-    </span>
-    <span id="from">From me.</span>
-    <ul id="letter-number-list" class="letter-number-list">
-      <%number=1;%>
-      <%content.letters.forEach(function(ltr){%>
-      <li class="letter-number" id=<%=String(number)%>><%=number%></li>
-      <%number++;%>
-      <%})%>
-    </ul>
+    <div class="letter-bottom" id="letter-bottom">
+      <span id="date">
+        <%= content.date.substring(0,10).replace('-','.').replace('-','.');%>
+      </span>
+      <span id="from">From me.</span>
+      <ul id="letter-number-list" class="letter-number-list">
+        <%number=1;%>
+        <%content.letters.forEach(function(ltr){%>
+        <li class="letter-number" id=<%=String(number)%>><%=number%></li>
+        <%number++;%>
+        <%})%>
+      </ul>
+    </div>
   </div>
   <img src="/images/mailview-envelope.png" id="envelope">
   <div class="footer">© 2020 XXIT</div>
