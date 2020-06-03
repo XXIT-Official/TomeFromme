@@ -8,7 +8,7 @@ router.get("/",  (req, res, next) => {
   res.render("index");
 });
 
-router.post("/chk",(req,res)=>{
+router.post("/",(req,res)=>{
     console.log(req.body.email);
     Letter.findOne({ email:req.body.email, ukey:req.body.key })
         .exec()
