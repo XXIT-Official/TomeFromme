@@ -1,6 +1,6 @@
 let letter = [];
 let currentIndex = 1;
-document.getElementById(currentIndex).className = "letter-number checked";
+
 
 for (let i = 1; i <= document.getElementById('letter-wrap-content').childElementCount; i++) {
     letter[i - 1] = document.getElementById('letter' + String(i)).innerHTML;
@@ -23,6 +23,7 @@ for (let i = 1; i <= document.getElementById('letter-wrap-content').childElement
 
 }
 
+document.getElementById(currentIndex).className = "letter-number checked";
 replaceArrow();
 document.getElementById("letter" + String(currentIndex)).innerHTML = letter[currentIndex - 1];
 
@@ -54,6 +55,7 @@ function replaceNum(direction) {
     change.style.backgroundColor = '#4353a1';
     change.style.color = '#ffffff';
     replaceArrow();
+    checkChar(currentIndex - 1);
 }
 
 function replaceArrow() {
@@ -70,9 +72,10 @@ function replaceArrow() {
                 replaceNext();
             }
         }
-    }else {
-        document.getElementById(String(currentIndex)).style.marginLeft="30px";
+    } else {
+        document.getElementById(String(currentIndex)).style.marginLeft = "30px";
     }
+    checkChar(currentIndex - 1);
 }
 function replacePrev() {
     document.getElementById('prev').src = "/images/icons/chevron-back-outline.svg";
@@ -82,4 +85,26 @@ function replacePrev() {
 function replaceNext() {
     document.getElementById('prev').src = "/images/icons/chevron-back-outline-blue.svg";
     document.getElementById('next').src = "/images/icons/chevron-forward-outline.svg";
+}
+
+function checkChar(index) {
+    let button = document.getElementsByClassName('button');
+    if (letter[index].length < 450) {
+        button[0].style.marginTop = "3%";
+        button[1].style.marginTop = "3%";
+        document.getElementById('letter-bottom').style.marginTop = "120px";
+        document.getElementById('envelope').style.marginTop = "20%";
+        return 0;
+    } else if (letter[index].length > 2000) {
+        button[0].style.marginTop = "25%";
+        button[1].style.marginTop = "25%";
+        document.getElementById('letter-bottom').style.marginTop = "0";
+        document.getElementById('envelope').style.marginTop = String(document.getElementById('letter-wrap-content').scrollHeight + 50) + "px";
+    } else {
+        button[0].style.marginTop = "9%";
+        button[1].style.marginTop = "9%";
+        document.getElementById('envelope').style.marginTop = String(5 + document.getElementById(currentIndex).scrollHeight) + "vw";
+    }
+    document.getElementById('letter-bottom').style.marginTop = "0";
+
 }
