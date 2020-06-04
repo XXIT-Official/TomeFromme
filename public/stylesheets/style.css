@@ -1,13 +1,15 @@
 /* home */
 .home__container {
-  background: url(../images/home.svg) no-repeat;
+  background: url(../images/home-1.png) no-repeat;
   background-size: cover;
-  padding: 150px 0 200px;
+  padding: 200px 0 370px;
+  padding-right: 20%;
+
 }
 
 .home__title {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 35px;
+  line-height: 55px;
 }
 
 .home__form {
@@ -15,20 +17,21 @@
 }
 .home__form input,
 .home__form button {
-  height: 35px;
-  padding: 0 10px;
+  height: 44px;
+  padding: 0 12px;
 }
 .home__form input {
-  width: 300px;
-  border: 1px solid #a1a1a1;
-  border-radius: 5px;
-  margin-right: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 12px;
+  margin-right: 12px;
 }
 .home__form button {
   background-color: #3f51b4;
   border: none;
+  line-height: 19px;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 11px;
   font-size: 14px;
 }
 
@@ -41,9 +44,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
+  width: 160px;
+  height: 160px;
+  margin-right: 40px;
   border-radius: 50%;
   background: transparent linear-gradient(180deg, #0f4c81 0%, #5a6bea58 100%) 0%
     0% no-repeat padding-box;
@@ -130,7 +133,7 @@
 }
 /* contact */
 .contact__container {
-  margin-top: 100px;
+  margin-top: 130px;
   padding: 50px 0;
   background: transparent linear-gradient(180deg, #efeff29d 0%, #c9ccdb 100%) 0%
     0% no-repeat padding-box;
@@ -187,9 +190,18 @@
   border-radius: 15px;
   color: #3f51b4;
 }
+
+.pages__page :hover {
+  background-image: url('../images/contact-hover.png');
+  background-size: cover;
+  color: white;
+  border-color: white;
+}
+
+
 .contact__container small {
   display: block;
   text-align: center;
-  margin-top: 50px;
-  font-size: 12px;
+  margin-top: 80px;
+  font-size: 21px;
 }

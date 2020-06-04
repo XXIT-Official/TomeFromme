@@ -3,7 +3,6 @@
   <head>
     <title>ToMeFromMe</title>
     <%- include('../components/styles.ejs') %>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -23,9 +22,10 @@
       <article id="home" class="home__container">
         <div class="container">
           <h2 class="home__title">6개월 전의<br />나의 열정 확인하기</h2>
-          <form class="home__form" method="post" action="/email">
-            <input type="email" name="email" placeholder="이메일을 입력해주세요." required/>
-            <button type="submit">OK</button>
+          <form class="home__form" method="post" action="/">
+            <input type="email" name="email" placeholder="email" required/>
+            <input type="text" name="key" placeholder="key" required/>
+            <button type="submit">편지 확인</button>
           </form>
           <ul class="home__pages">
             <li>
@@ -98,16 +98,16 @@
           <h2>Contact</h2>
           <ul class="contact__socials">
             <li>
-              <a href="#" class="fas fa-envelope"></a>
+              <a href="https://xxit.world/#support" class="fas fa-envelope"></a>
             </li>
             <li>
-              <a href="#" class="fab fa-twitter"></a>
+              <a href="https://twitter.com/officialxxit" class="fab fa-twitter"></a>
             </li>
             <li>
-              <a href="#" class="fab fa-facebook-square"></a>
+              <a href="https://www.facebook.com/xxit.official/?ref=nf&hc_ref=ARR9ygAWPM6Np2jNj9Bex3o0FSnGVsuNxNV3XDXJE7LLXbhhnXAyZJisTcMYLavGesA&__tn__=%3C-R" class="fab fa-facebook-square"></a>
             </li>
             <li>
-              <a href="#" class="fab fa-instagram"></a>
+              <a href="https://www.instagram.com/xxit.official/?hl=ko" class="fab fa-instagram"></a>
             </li>
           </ul>
           <ul class="contact__pages">
