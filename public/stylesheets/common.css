@@ -68,7 +68,17 @@ header {
   z-index: 100;
   position: fixed;
   width: 100vw;
-  background: rgba(255, 255, 255, 0.7);
+}
+
+.header-scroll {
+  background-color:#FFFFFFBF;
+  -webkit-transition-duration:0.5s;
+  transition-duration:0.5s;
+}
+.header-top {
+  background-color:rgba(255, 255, 255, 0);
+  -webkit-transition-duration:0.8s;
+  transition-duration:0.8s;
 }
 
 header .container {
