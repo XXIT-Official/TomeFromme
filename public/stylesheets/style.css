@@ -209,11 +209,18 @@
 
   width: 296px;
   height: 88px;
+ 
+}
+
+@media screen and (max-width: 375px) {
+  .pop_up__layout {
+    left: 3%;
+    width: 94%;
+  }
 }
 
 .pop_up__body {
   padding-left: 28px;
-  /* padding-top: 19.34px; */
   padding-top: 23px;
 }
 
