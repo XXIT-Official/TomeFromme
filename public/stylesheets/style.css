@@ -237,6 +237,7 @@
 #pop_up_close_button {
   float: right;
   padding-right: 19.34px;
+  margin-top: -2%;
 }
 
 #pop_up_title {
