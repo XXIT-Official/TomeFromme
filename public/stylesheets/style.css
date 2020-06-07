@@ -222,6 +222,7 @@
 .pop_up__body {
   padding-left: 28px;
   padding-top: 23px;
+  padding-right: 19.34px;
 }
 
 #pop_up_icon {
@@ -236,8 +237,8 @@
 
 #pop_up_close_button {
   float: right;
-  padding-right: 19.34px;
   margin-top: -2%;
+  cursor: pointer;
 }
 
 #pop_up_title {
