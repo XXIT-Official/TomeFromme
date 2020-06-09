@@ -4,9 +4,15 @@
 <head>
   <title>ToMeFromMe</title>
   <%- include('../components/styles.ejs') %>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/letter.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/letter.css"
+  media="screen and (min-width:769px)"/>
   <link rel="stylesheet" type="text/css" href="/stylesheets/chevron.css" />
   <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
+  <link
+          rel="stylesheet"
+          href="/stylesheets/letter-mobile.css"
+          media="screen and (max-width:768px)"
+  />
 </head>
 
 <body>
@@ -51,6 +57,7 @@
     </div>
   </div>
   <img src="/images/mailview-envelope.png" id="envelope">
+  <img src="/images/mailview-envelope-mobile.png" id="envelope-mobile">
   <div class="footer">© 2020 XXIT</div>
   <script type="text/javascript" src="/javascript/letterView.js"></script>
 </body>
