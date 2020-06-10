@@ -18,7 +18,7 @@
 <body>
   <%- include('../components/header.ejs') %>
   <div class="letter-wrap" id="letter-wrap">
-    <span id="to">To me,</span>
+    <span id="to">to me,</span>
     <div class="letter-up">
       <div class="letter-back button" id="btn1" onclick="prevBtn()">
         <img id="prev" src="/images/icons/chevron-back-outline.svg">
@@ -38,7 +38,7 @@
       <span id="date">
         <%= content.date.substring(0,10).replace('-','.').replace('-','.');%>
       </span>
-      <span id="from">From me.</span>
+      <span id="from">from me.</span>
       <ul id="letter-number-list" class="letter-number-list">
         <%number=1;%>
         <%content.letters.forEach(function(ltr){%>
