@@ -104,6 +104,10 @@ span {
 
 }
 
+#envelope-mobile {
+    display: none;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
