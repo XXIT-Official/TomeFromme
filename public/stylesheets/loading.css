@@ -100,28 +100,3 @@ body {
     transition: 1s 1s ease;
   }
 }
-
-/* .cover:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-top: 100px solid #5f83b8;
-    border-bottom: 100px solid transparent;
-    z-index: 6;
-    transform-origin: top;
-    transform: rotateX(0deg);
-    transition: all 1s 1s ease;
-  } */
-
-/* .mail:hover .cover:before {
-    transform: rotateX(180deg);
-    transition: all 1s ease;
-  } */
-
-/* .mail:hover .letter {
-    top: -80px;
-    transition: all 1s 1s ease;
-  } */
