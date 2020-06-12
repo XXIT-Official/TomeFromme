@@ -103,7 +103,7 @@ function checkChar(index) {
     } else {
         button[0].style.marginTop = "9%";
         button[1].style.marginTop = "9%";
-        document.getElementById('envelope').style.marginTop = String(5 + document.getElementById(currentIndex).scrollHeight) + "vw";
+        document.getElementById('envelope').style.marginTop = String(5 + document.getElementById(currentIndex).scrollHeight+10) + "vw";
     }
     document.getElementById('letter-bottom').style.marginTop = "0";
 

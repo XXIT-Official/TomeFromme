@@ -123,3 +123,8 @@ span {
     height: 13vw;
 }
 
+header {
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+}
