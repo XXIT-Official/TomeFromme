@@ -44,19 +44,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  line-height: 31px;
   width: 160px;
   height: 160px;
   margin-right: 40px;
   border-radius: 50%;
   background: transparent linear-gradient(180deg, #0f4c81 0%, #5a6bea58 100%) 0%
     0% no-repeat padding-box;
-  font-size: 14px;
+  font-size: 17px;
   color: #ffffff;
 }
 .home__pages a h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 2px;
+}
+.home__pages a h4 {
+  font-size: 19px;
+  font-weight: bold;
 }
 
 /* about */
@@ -65,6 +69,7 @@
   0% 0% no-repeat padding-box;
   background-size: 20%;
   background-position: 650px 0px;
+  margin-top: 2%;
 }
 
 .about__title {
