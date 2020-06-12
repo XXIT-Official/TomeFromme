@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     width: 64%;
     height: 48%;
-    margin-top: 20%;
+    margin-top: 21%;
     line-height: 3vmin;
     color: black;
     font-size: 1.8vmin;
@@ -68,11 +68,11 @@ span {
 
 #to {
     float: left;
-    margin-top: 12%;
+    margin-top: 11%;
     margin-left: 9vw;
     font-family: 'Mrs Saint Delafield', cursive;
     font-weight: 450;
-    font-size: 2.6vw;
+    font-size: 3.1vw;
 }
 
 
@@ -88,9 +88,9 @@ span {
 #from {
     display: block;
     float :right;
-    top: 5%;
+    top: 6%;
     font-family: 'Mrs Saint Delafield', cursive;
-    font-size: 2.6vw;
+    font-size: 3.1vw;
     font-weight: 450;
     margin-right: 20%;
 }
