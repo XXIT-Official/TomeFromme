@@ -76,7 +76,6 @@ header {
   width: 100%;
 }
 
-
 .header-scroll {
   background-color: #ffffffbf;
   -webkit-transition-duration: 0.5s;
@@ -92,14 +91,14 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   max-width: 1375px;
   padding-right: 120px;
 }
 
 .header__logo {
   color: #3f51b4;
-  font-size: 30px;
+  font-size: 36px;
   letter-spacing: 1px;
   font-weight: bold;
   float: left;
@@ -107,13 +106,11 @@ header .container {
 
 .header__nav {
   display: flex;
-  float: right;
 }
-
 
 .header__nav li a {
   color: #909090;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 405;
   margin-left: 66px;
 }
@@ -133,6 +130,7 @@ header .container {
     flex-direction: column;
     justify-content: center;
     height: 120px;
+    padding: 0;
   }
   .header__nav {
     margin-top: 10px;
@@ -142,12 +140,13 @@ header .container {
   }
   .header__nav li a {
     font-size: 14px;
+    margin-left: 0;
   }
   .header-scroll {
     position: fixed;
     top: -70px;
   }
   .header-scroll .header__nav {
-    margin-top: 40px;
+    margin-top: 35px;
   }
 }
