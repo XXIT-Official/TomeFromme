@@ -2,7 +2,7 @@
 .home__container {
   background: url(../images/home-1.png) no-repeat;
   background-size: cover;
-  padding: 140px 0 320px;
+  padding: 200px 0 370px;
   padding-right: 20%;
 
 }
@@ -44,23 +44,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 31px;
   width: 160px;
   height: 160px;
   margin-right: 40px;
   border-radius: 50%;
   background: transparent linear-gradient(180deg, #0f4c81 0%, #5a6bea58 100%) 0%
     0% no-repeat padding-box;
-  font-size: 17px;
+  font-size: 14px;
   color: #ffffff;
 }
 .home__pages a h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-}
-.home__pages a h4 {
-  font-size: 19px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* about */
@@ -68,29 +64,18 @@
   background: transparent url('../images/about-paperplane.png')
   0% 0% no-repeat padding-box;
   background-size: 20%;
-  background-position: 670px 0px;
-  margin-top: 2%;
+  background-position: 650px 0px;
 }
 
 .about__title {
   text-align: center;
 }
 .about__title h2 {
-  font-size: 50px;
+  font-size: 32px;
   font-weight: bold;
 }
 .about__title span {
   display: block;
-}
-#text__with {
-  font-size: 26px;
-  padding: 10px 0;
-  color: #626262;
-}
-#text__XXIT {
-  font-size: 36px;
-  color: #1E3A9A;
-  margin-left: 10px;
 }
 .about__title span:nth-of-type(1) {
   opacity: 0.5;
@@ -117,22 +102,20 @@
 .contents__content {
   color: #707070;
   font-size: 14px;
-  padding-right: 50px;
 }
 .content__title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .contents__content p {
   max-width: 360px;
-  line-height: 32px;
+  line-height: 24px;
   text-align: justify;
-  font-size: 16px;
 }
 
 .about__quote {
-  margin-top: 70px;
+  margin-top: 50px;
   color: #707070;
   text-align: center;
 }
@@ -196,13 +179,14 @@
   background: none;
 }
 .page__button {
+  margin-top: 10px;
   display: block;
   padding: 10px 10px;
   margin-top: 10px;
   border: 2px solid #3f51b4;
   border-radius: 10px;
   color: #3f51b4;
-  font-size: 15px;
+  font-size: 14px;
 }
 .pages__page a {
   display: flex;
