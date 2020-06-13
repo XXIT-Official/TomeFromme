@@ -56,7 +56,7 @@
 .home__pages a h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 /* about */
@@ -139,8 +139,11 @@
     0% no-repeat padding-box;
 }
 .contact__container h2 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 405;
+  color: #464646;
+  margin-bottom: 15px;
+  margin-left: 2px;
 }
 .contact__socials li {
   display: inline-block;
@@ -168,18 +171,19 @@
 }
 .pages__page h3 {
   font-size: 20px;
-  font-weight: bold;
-  line-height: 28px;
-    color: #3f51b4;
+  font-weight: 470;
+  line-height: 37px;
+  color: #3f51b4;
 }
 .pages__page:hover h3 {
   background: none;
 }
 .page__button {
-  display: block;
-  padding: 10px 20px;
   margin-top: 10px;
-  border: 1px solid #3f51b4;
+  display: block;
+  padding: 10px 10px;
+  margin-top: 10px;
+  border: 2px solid #3f51b4;
   border-radius: 10px;
   color: #3f51b4;
   font-size: 14px;
@@ -212,6 +216,6 @@
 .contact__container small {
   display: block;
   text-align: center;
-  margin-top: 80px;
-  font-size: 21px;
+  margin-top: 90px;
+  font-size: 20px;
 }
