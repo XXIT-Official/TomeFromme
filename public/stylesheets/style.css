@@ -68,7 +68,7 @@
   background: transparent url('../images/about-paperplane.png')
   0% 0% no-repeat padding-box;
   background-size: 20%;
-  background-position: 650px 0px;
+  background-position: 670px 0px;
   margin-top: 2%;
 }
 
@@ -76,11 +76,21 @@
   text-align: center;
 }
 .about__title h2 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
 }
 .about__title span {
   display: block;
+}
+#text__with {
+  font-size: 26px;
+  padding: 10px 0;
+  color: #626262;
+}
+#text__XXIT {
+  font-size: 36px;
+  color: #1E3A9A;
+  margin-left: 10px;
 }
 .about__title span:nth-of-type(1) {
   opacity: 0.5;
@@ -107,20 +117,22 @@
 .contents__content {
   color: #707070;
   font-size: 14px;
+  padding-right: 50px;
 }
 .content__title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .contents__content p {
   max-width: 360px;
-  line-height: 24px;
+  line-height: 32px;
   text-align: justify;
+  font-size: 16px;
 }
 
 .about__quote {
-  margin-top: 50px;
+  margin-top: 70px;
   color: #707070;
   text-align: center;
 }
@@ -144,8 +156,11 @@
     0% no-repeat padding-box;
 }
 .contact__container h2 {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 405;
+  color: #464646;
+  margin-bottom: 15px;
+  margin-left: 2px;
 }
 .contact__socials li {
   display: inline-block;
@@ -173,21 +188,21 @@
 }
 .pages__page h3 {
   font-size: 20px;
-  font-weight: bold;
-  line-height: 28px;
-    color: #3f51b4;
+  font-weight: 470;
+  line-height: 37px;
+  color: #3f51b4;
 }
 .pages__page:hover h3 {
   background: none;
 }
 .page__button {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin-top: 10px;
-  border: 1px solid #3f51b4;
+  border: 2px solid #3f51b4;
   border-radius: 10px;
   color: #3f51b4;
-  font-size: 14px;
+  font-size: 15px;
 }
 .pages__page a {
   display: flex;
@@ -217,6 +232,6 @@
 .contact__container small {
   display: block;
   text-align: center;
-  margin-top: 80px;
-  font-size: 21px;
+  margin-top: 90px;
+  font-size: 20px;
 }
