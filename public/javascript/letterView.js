@@ -89,21 +89,20 @@ function replaceNext() {
 
 function checkChar(index) {
     let button = document.getElementsByClassName('button');
-    if (letter[index].length < 450) {
+    if (letter[index].length <= 450) {
         button[0].style.marginTop = "3%";
         button[1].style.marginTop = "3%";
         document.getElementById('letter-bottom').style.marginTop = "120px";
         document.getElementById('envelope').style.marginTop = "20%";
         return 0;
-    } else if (letter[index].length > 2000) {
+    } else if (letter[index].length > 1500) {
         button[0].style.marginTop = "25%";
         button[1].style.marginTop = "25%";
-        document.getElementById('letter-bottom').style.marginTop = "0";
         document.getElementById('envelope').style.marginTop = String(document.getElementById('letter-wrap-content').scrollHeight + 55) + "px";
     } else {
         button[0].style.marginTop = "9%";
         button[1].style.marginTop = "9%";
-        document.getElementById('envelope').style.marginTop = String(5 + document.getElementById(currentIndex).scrollHeight+15) + "vw";
+        document.getElementById('envelope').style.marginTop = String(window.innerHeight-150) + "px";
     }
     document.getElementById('letter-bottom').style.marginTop = "0";
 
