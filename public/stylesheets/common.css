@@ -91,14 +91,14 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   max-width: 1375px;
   padding-right: 120px;
 }
 
 .header__logo {
   color: #3f51b4;
-  font-size: 30px;
+  font-size: 36px;
   letter-spacing: 1px;
   font-weight: bold;
   float: left;
@@ -110,7 +110,7 @@ header .container {
 
 .header__nav li a {
   color: #909090;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 405;
   margin-left: 66px;
 }
@@ -147,6 +147,6 @@ header .container {
     top: -70px;
   }
   .header-scroll .header__nav {
-    margin-top: 40px;
+    margin-top: 35px;
   }
 }
