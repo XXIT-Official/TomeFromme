@@ -45,8 +45,8 @@ body {
     display: flex;
 }
 .letter-number {
-    padding :1%;
-    width: 5%;
+    padding: 4px 0;
+    width: 4%;
     font-size: 0.8vw;
     background-color:#E8E8E8;
     color: #909090;
