@@ -1,6 +1,7 @@
 /* home */
 .home__container {
   padding: 150px 0;
+  background-position: left;
 }
 .home__container .container {
   display: flex;
