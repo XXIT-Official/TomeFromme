@@ -2,9 +2,9 @@
 .home__container {
   background: url(../images/home-1.png) no-repeat;
   background-size: cover;
-  padding: 200px 0 370px;
-  padding-right: 20%;
-
+  padding: 200px 0 20%;
+  padding-right: 18%;
+  background-position: center;
 }
 
 .home__title {
@@ -218,4 +218,10 @@
   text-align: center;
   margin-top: 90px;
   font-size: 20px;
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .home__container {
+    padding: 200px 0 11%;
+}
 }
