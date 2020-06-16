@@ -5,22 +5,21 @@ body {
 }
 
 .letter-wrap {
-    margin :7% 25%;
+    margin: 110px 25% 7% 25%;
     width: 50%;
-    height: auto;
+    min-height: 500px;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #F4F4F4 100%) 0% 0% no-repeat padding-box;
-    position: absolute;
+    position: relative;
     box-shadow: 0 0 20px gray;
+    padding-top: 5vw;
 }
 
 .letter-wrap-content {
     margin: 0 auto;
     width: 64%;
-    height: 48%;
-    margin-top: 21%;
-    line-height: 3vmin;
+    line-height: 1.5rem;
     color: black;
-    font-size: 1.8vmin;
+    font-size: 1rem;
     position: relative;
     text-align: left;
 }
@@ -28,11 +27,17 @@ body {
 .letter-back {
     float: left;
     margin-left: 5%;
+    position: fixed;
+    top: 30%;
+    left: 20%;
 }
 
 .letter-forward {
     float: right;
     margin-right: 5%;
+    position: fixed;
+    top: 30%;
+    right: 20%;
 }
 
 #buttons {
@@ -47,7 +52,7 @@ body {
 .letter-number {
     padding: 4px 0;
     width: 4%;
-    font-size: 0.8vw;
+    font-size: 1vw;
     background-color:#E8E8E8;
     color: #909090;
     text-align: center;
@@ -67,8 +72,7 @@ span {
 }
 
 #to {
-    float: left;
-    margin-top: 11%;
+    display: block;
     margin-left: 9vw;
     font-family: 'Mrs Saint Delafield', cursive;
     font-weight: 450;
@@ -79,7 +83,7 @@ span {
 #date {
     display: block;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1rem;
     margin-top: 3%;
     font-style: normal;
     font-weight: 100;
@@ -100,16 +104,19 @@ span {
     width:28%; 
     height:35%;
     margin-left: 66%;
-    margin-bottom: 12%;
-
+    margin-bottom: 16px;
+    margin-top: -500px;
 }
 
 #envelope-mobile {
     display: none;
 }
 
+#top-btn {
+    display: none;
+}
+
 .footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -126,5 +133,6 @@ span {
 header {
     z-index: 100;
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    top: 0;
 }

@@ -18,7 +18,6 @@ for (let i = 1; i <= document.getElementById('letter-wrap-content').childElement
         change.style.color = '#ffffff';
         currentIndex = currentNum;
         replaceArrow();
-        //className 변경해서 .checked 로 수정할려고 했는데 안먹혀서 이런 식으로 구현..
     });
 
 }
@@ -55,7 +54,6 @@ function replaceNum(direction) {
     change.style.backgroundColor = '#4353a1';
     change.style.color = '#ffffff';
     replaceArrow();
-    checkChar(currentIndex - 1);
 }
 
 function replaceArrow() {
@@ -75,7 +73,6 @@ function replaceArrow() {
     } else {
         document.getElementById(String(currentIndex)).style.marginLeft = "30px";
     }
-    checkChar(currentIndex - 1);
 }
 function replacePrev() {
     document.getElementById('prev').src = "/images/icons/chevron-back-outline.svg";
@@ -87,23 +84,3 @@ function replaceNext() {
     document.getElementById('next').src = "/images/icons/chevron-forward-outline.svg";
 }
 
-function checkChar(index) {
-    let button = document.getElementsByClassName('button');
-    if (letter[index].length <= 450) {
-        button[0].style.marginTop = "3%";
-        button[1].style.marginTop = "3%";
-        document.getElementById('letter-bottom').style.marginTop = "120px";
-        document.getElementById('envelope').style.marginTop = "20%";
-        return 0;
-    } else if (letter[index].length > 1500) {
-        button[0].style.marginTop = "25%";
-        button[1].style.marginTop = "25%";
-        document.getElementById('envelope').style.marginTop = String(document.getElementById('letter-wrap-content').scrollHeight + 55) + "px";
-    } else {
-        button[0].style.marginTop = "9%";
-        button[1].style.marginTop = "9%";
-        document.getElementById('envelope').style.marginTop = String(window.innerHeight-150) + "px";
-    }
-    document.getElementById('letter-bottom').style.marginTop = "0";
-
-}
