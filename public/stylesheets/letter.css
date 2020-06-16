@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
     width: 64%;
     line-height: 1.5rem;
-    color: black;
+    color: #464646;
     font-size: 1rem;
     position: relative;
     text-align: left;
@@ -74,19 +74,22 @@ span {
 #to {
     display: block;
     margin-left: 9vw;
+    margin-bottom: 1vw;
     font-family: 'Mrs Saint Delafield', cursive;
-    font-weight: 450;
+    font-weight: 300;
     font-size: 3.1vw;
+    color: #707070;
 }
 
 
 #date {
     display: block;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 3%;
     font-style: normal;
     font-weight: 100;
+    color: #464646;
 }
 
 #from {
@@ -95,8 +98,9 @@ span {
     top: 6%;
     font-family: 'Mrs Saint Delafield', cursive;
     font-size: 3.1vw;
-    font-weight: 450;
+    font-weight: 300;
     margin-right: 20%;
+    color: #707070;
 }
 
 
@@ -123,6 +127,7 @@ span {
     font-size: 20px;
     background: #F4F4F4 0% 0% no-repeat padding-box;
     padding: 30px 0;
+    color: #464646;
 }
 
 .letter-bottom {

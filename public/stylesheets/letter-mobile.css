@@ -23,7 +23,7 @@ header {
 .letter-wrap-content {
   margin: 3vmin auto 0 auto;
   line-height: 5vmin;
-  color: #707070;
+  color: #464646;
   font-size: 1rem;
   position: relative;
   text-align: left;
@@ -81,7 +81,7 @@ span {
   font-family: 'Mrs Saint Delafield', cursive;
   font-weight: 300;
   font-size: 5vmax;
-  color: #464646;
+  color: #707070;
 }
 
 
@@ -100,7 +100,7 @@ span {
   float: right;
   font-family: 'Mrs Saint Delafield', cursive;
   font-size: 5vmax;
-  color: #464646;
+  color: #707070;
   font-weight: 300;
 }
 
