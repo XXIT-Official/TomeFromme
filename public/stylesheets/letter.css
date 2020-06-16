@@ -7,7 +7,7 @@ body {
 .letter-wrap {
     margin: 110px 25% 7% 25%;
     width: 50%;
-    min-height: 500px;
+    min-height: 66vh;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #F4F4F4 100%) 0% 0% no-repeat padding-box;
     position: relative;
     box-shadow: 0 0 20px gray;
@@ -40,7 +40,7 @@ body {
     right: 20%;
 }
 
-#buttons {
+#button {
     margin-top: 10%;
  }
 
