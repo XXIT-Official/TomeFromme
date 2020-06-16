@@ -17,8 +17,6 @@ body {
 .letter-wrap-content {
     margin: 0 auto;
     width: 64%;
-    /*height: 48%;*/
-    /*margin-top: 21%;*/
     line-height: 1.5rem;
     color: black;
     font-size: 1rem;
@@ -74,8 +72,6 @@ span {
 }
 
 #to {
-    /*float: left;*/
-    /*margin-top: 11%;*/
     display: block;
     margin-left: 9vw;
     font-family: 'Mrs Saint Delafield', cursive;
@@ -121,7 +117,6 @@ span {
 }
 
 .footer {
-    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     text-align: center;
