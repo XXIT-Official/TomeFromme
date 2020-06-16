@@ -3,10 +3,23 @@
   <head>
     <title>ToMeFromMe</title>
     <%- include('../components/styles.ejs') %>
+    <style>
+      body {
+        position: relative;
+        height: 100vh;
+      }
+
+      .check-message {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
   </head>
   <body>
     <%- include('../components/header.ejs') %>
-    <h1>키를 다시 확인하세요.</h1>
+    <h1 class="check-message">키를 다시 확인하세요.</h1>
     <div class="letter-wrap">
       <div class="letter-wrap-content"></div>
     </div>
