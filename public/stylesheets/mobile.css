@@ -1,6 +1,7 @@
 /* home */
 .home__container {
   padding: 150px 0;
+  background-position: left;
 }
 .home__container .container {
   display: flex;
@@ -28,9 +29,9 @@
 }
 
 .home__pages a {
-  width: 100px;
-  height: 100px;
-  margin: 0 10px;
+  width: 110px;
+  height: 110px;
+  margin: 0 5px;
 }
 .home__pages a h3 {
   font-size: 16px;
@@ -75,13 +76,22 @@
   width: 80px;
   font-size: 18px;
   text-align: center;
-  line-height: 20px;
+  line-height: 18px;
 }
 .pages__page span {
   font-size: 14px;
+  margin-top: 5px;
 }
 
 .pages__page :hover {
   background: #ffffff;
   color: #3f51b4;
+}
+.pages__page :hover > h3,
+.pages__page :hover span {
+  color: #3f51b4;
+}
+
+.contact__container small {
+  font-size: 12px;
 }
