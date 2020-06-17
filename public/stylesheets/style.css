@@ -223,7 +223,9 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
   .home__container {
     padding: 200px 0 11%;
+  }
 }
+
 
 /* pop up*/
 .pop_up__layout {
