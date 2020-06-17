@@ -4,4 +4,5 @@ close_button.onclick = function() {
     var body = close_button.parentElement;
     var layout = body.parentElement;
     layout.parentNode.removeChild(layout);
-}
+    setCookie('popup_close', 'Y', 1);
+};
