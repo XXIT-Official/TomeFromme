@@ -209,7 +209,10 @@
 
   width: 296px;
   height: 88px;
- 
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 375px) {
