@@ -1,15 +1,26 @@
+
+#loading{
+  width:100%;
+  height:100%;
+  position:fixed;
+  left:0px;
+  top:0px;
+  background:#fff;
+  z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+
 body {
   background-color: #f6f8fd;
 }
 
-.wrapper {
+.loading-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.mail {
+.loading-mail {
   width: 300px;
   height: 200px;
   background-color: #3369bb;
@@ -19,7 +30,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.mail:before {
+.loading-mail:before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,7 +43,7 @@ body {
   z-index: 5;
 }
 
-.mail:after {
+.loading-mail:after {
   content: "";
   position: absolute;
   top: 0;
@@ -45,7 +56,7 @@ body {
   z-index: 4;
 }
 
-.cover {
+.loading-cover {
   position: absolute;
   top: 0;
   left: 0;
@@ -67,7 +78,7 @@ body {
   }
 }
 
-.letter {
+.loading-letter {
   position: absolute;
   z-index: 4;
   top: 0px;
@@ -79,7 +90,7 @@ body {
   animation: letterMove 0.3s 0.5s ease-out both;
 }
 
-.letter .fire {
+.loading-letter .loading-fire {
   background-image: url("../images/fire@2x.png");
   background-size: cover;
   position: absolute;

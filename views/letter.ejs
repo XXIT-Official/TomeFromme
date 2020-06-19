@@ -4,6 +4,7 @@
 <head>
   <title>ToMeFromMe</title>
   <%- include('../components/styles.ejs') %>
+  <link rel="stylesheet" href="/stylesheets/loading.css" />
   <link rel="stylesheet" type="text/css" href="/stylesheets/letter.css"
   media="screen and (min-width:769px)"/>
   <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
@@ -12,9 +13,16 @@
           href="/stylesheets/letter-mobile.css"
           media="screen and (max-width:768px)"
   />
+  <script>
+    setTimeout(function() {
+      document.getElementById("loading").style.display = "none";
+    }, 2000);
+  </script>
 </head>
 
+
 <body>
+<div id="loading"> <%- include('loading.ejs') %></div>
   <%- include('../components/header.ejs') %>
   <div class="letter-wrap" id="letter-wrap">
     <span id="to">to me,</span>
