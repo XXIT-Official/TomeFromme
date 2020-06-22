@@ -5,7 +5,7 @@ XXIT tomefromme front
 이 저장소에 `PUSH`를 하면 자동으로 테스트용 서버에 `Build`됩니다
 * 서버에 적용되기까지 __1분__ 정도 소요됩니다*
 
-[서버](https://tomefromme.herokuapp.com/)
+[서버](https://tomefromme.xxit.world/)
 
 
 # 로컬에서 환경 구성
