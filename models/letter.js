@@ -7,6 +7,6 @@ const letterSchema = new mongoose.Schema({
     ukey:String,
     date:String,
     letters:Array
-},{collection:'tomein2020-test'});
+},{collection:'tomein2020'});
 
 module.exports = mongoose.model("Letter", letterSchema);
